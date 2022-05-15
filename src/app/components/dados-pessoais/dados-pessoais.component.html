@@ -1,26 +1,40 @@
 <div class="form">
   <span class="titulo">Dados Pessoais</span>
   <form>
-    <div class="label">
-      <label for=""> Nome: <input type="text" maxlength="55"/> Sobrenome: <input type="text" maxlength="55"> </label>
+    <div class="label-container">
+      <label for="" class="label">
+        <span>Nome:</span><input type="text" />
+      </label>
+      <label for="" class="label">
+        <span>Sobrenome:</span><input type="text" />
+      </label>
     </div>
-    <div class="label">
-        <label for="">
-            Nascimento:
-            <input type="text" placeholder="dd" maxlength="2">
-            <input type="text" placeholder="mm" maxlength="2">
-            <input type="text" placeholder="yyyy" maxlength="4">
-        </label>
-    </div>
-    <div class="label">
-        <label for="">
-            RG: <input type="text" maxlength="13">
-        </label>
-    </div>
-    <div class="label">
-        <label for="">
-            CPF: <input type="text" maxlength="11"> - <input type="text" maxlength="2">
-        </label>
+    <label for="" class="label nascimento">
+      <span>Nascimento:</span>
+      <span class="space"></span>
+      <span class="align">
+        <input type="text" maxlength="2" placeholder="dd">
+        <input type="text" maxlength="2" placeholder="mm">
+        <input type="text" maxlength="4" placeholder="yyyy">
+      </span>
+    </label>
+    <label for="" class="label">
+      <span>RG:</span>
+      <input type="text" name="" id="">
+    </label>
+    <label for="" class="label">
+      <span>CPF:</span>
+      <span class="space" style="width: 53%;"></span>
+      <span class="align">
+        <input type="text" maxlength="11" width="">
+        -
+        <input type="text" maxlength="2" style="width: 20px;">
+      </span>
+    </label>
+    <div class="label-container">
+      <button type="reset">Limpar</button>
+      <span style="width: 50px;"></span>
+      <button type="submit">Enviar</button>
     </div>
   </form>
 </div>

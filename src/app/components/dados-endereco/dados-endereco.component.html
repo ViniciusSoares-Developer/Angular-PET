@@ -1,24 +1,44 @@
 <div class="form">
-    <span class="titulo">Dados de Endereço</span>
-    <form>
-        <div class="label">
-            <label for="">Rua: <input type="text" maxlength="55"> Numero: <input type="number" name="" id=""></label>            
-        </div>
-        <div class="label">
-            <label for="">Bairro: <input type="text" maxlength="55"></label>
-        </div>
-        <div class="label">
-            <label for="">Estado:
-                <select name="" id="">
-                    <option *ngFor="let estado of estados" value="{{estado}}">{{estado}}</option>
-                </select>
-            </label>
-        </div>
-        <div class="label">
-            <label for="">Cidade: <input type="text" maxlength="55"></label>
-        </div>
-        <div class="label">
-            <label for="">CEP: <input type="text" maxlength="5"> - <input type="text" maxlength="3"></label>
-        </div>
-    </form>
+  <span class="titulo">Dados de Endereço</span>
+  <form>
+    <div class="label-container">
+      <label for="" class="label">
+        <span>Rua:</span>
+        <input type="text" maxlength="55" />
+      </label>
+      <label for="" class="label" style="width: 150px">
+        <span>Numero:</span>
+        <input type="text" maxlength="3" style="width: 50px" />
+      </label>
+    </div>
+    <label for="" class="label">
+      <span>Bairro:</span>
+      <input type="text" maxlength="55" />
+    </label>
+    <label for="" class="label estado">
+      <span>Estado:</span>
+      <select>
+        <option *ngFor="let estado of estados" value="{{ estado }}">
+          {{ estado }}
+        </option>
+      </select>
+    </label>
+    <label for="" class="label">
+      <span>Cidade:</span>
+      <input type="text" maxlength="55" />
+    </label>
+    <label for="" class="label cep">
+      <span>CEP:</span>
+      <span class="align">
+        <input type="text" maxlength="11" style="width: 60px" />
+        -
+        <input type="text" maxlength="2" style="width: 20px" />
+      </span>
+    </label>
+    <div class="label-container">
+      <button type="reset">Limpar</button>
+      <span style="width: 50px"></span>
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
 </div>
